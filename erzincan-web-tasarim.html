@@ -249,9 +249,11 @@
     .hero-feature::before { content:''; width:16px; height:16px; min-width:16px; border-radius:50%; background:rgba(108,99,255,.15); border:1px solid rgba(108,99,255,.3); display:flex; align-items:center; justify-content:center; }
     .hero-feature-check { color:var(--purple2); font-size:.75rem; }
     .hero-actions { display:flex; gap:12px; flex-wrap:wrap; }
-    .hero-stats { display:flex; gap:28px; margin-top:32px; padding-top:28px; border-top:1px solid var(--border); flex-wrap:wrap; }
-    .hero-stat-num { font-size:1.5rem; font-weight:800; color:var(--text); }
-    .hero-stat-label { font-size:.78rem; color:var(--text3); margin-top:2px; }
+    .hero-stats { display:inline-flex; gap:0; margin-top:28px; background:rgba(255,255,255,.03); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
+    .hero-stat { padding:14px 24px; text-align:center; position:relative; }
+    .hero-stat + .hero-stat::before { content:''; position:absolute; left:0; top:20%; height:60%; width:1px; background:var(--border); }
+    .hero-stat-num { font-size:1.25rem; font-weight:800; color:var(--purple2); line-height:1; }
+    .hero-stat-label { font-size:.7rem; color:var(--text3); margin-top:4px; white-space:nowrap; }
     .hero-stat-num { font-family:'Space Grotesk',sans-serif; font-size:2.2rem; font-weight:800; background:linear-gradient(135deg,var(--purple2),var(--cyan)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
     .hero-stat-label { font-size:.82rem; color:var(--text2); margin-top:4px; }
 
@@ -603,10 +605,10 @@
           <a href="#portfolyo" class="btn btn-outline">📁 Portföyü İncele</a>
         </div>
         <div class="hero-stats">
-          <div><div class="hero-stat-num">150+</div><div class="hero-stat-label">Tamamlanan Proje</div></div>
-          <div><div class="hero-stat-num">%98</div><div class="hero-stat-label">Müşteri Memnuniyeti</div></div>
-          <div><div class="hero-stat-num">5+</div><div class="hero-stat-label">Yıllık Deneyim</div></div>
-          <div><div class="hero-stat-num">#1</div><div class="hero-stat-label">Erzincan Google</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">150+</div><div class="hero-stat-label">Tamamlanan Proje</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">%98</div><div class="hero-stat-label">Müşteri Memnuniyeti</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">5+</div><div class="hero-stat-label">Yıl Deneyim</div></div>
+          <div class="hero-stat"><div class="hero-stat-num">#1</div><div class="hero-stat-label">Erzincan Google</div></div>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
