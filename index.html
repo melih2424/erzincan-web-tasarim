@@ -236,19 +236,49 @@
       transform:rotateY(-8deg) rotateX(4deg);
       backdrop-filter:blur(20px);
     }
-    .mockup-bar { background:rgba(13,13,26,.9); padding:14px 20px; display:flex; align-items:center; gap:8px; border-bottom:1px solid rgba(108,99,255,.15); }
+    .mockup-bar { background:rgba(13,13,26,.9); padding:12px 18px; display:flex; align-items:center; gap:8px; border-bottom:1px solid rgba(108,99,255,.15); }
     .mockup-dot { width:11px; height:11px; border-radius:50%; }
     .mockup-dot:nth-child(1){background:#ff5f57;box-shadow:0 0 6px rgba(255,95,87,.5);}
     .mockup-dot:nth-child(2){background:#febc2e;box-shadow:0 0 6px rgba(254,188,46,.5);}
     .mockup-dot:nth-child(3){background:#28c840;box-shadow:0 0 6px rgba(40,200,64,.5);}
-    .mockup-url { flex:1; background:rgba(6,6,16,.7); border-radius:8px; padding:5px 14px; font-size:.72rem; color:var(--text3); margin-left:12px; border:1px solid var(--border); }
-    .mockup-body { padding:24px; }
-    .mockup-hero-bg { height:150px; border-radius:14px; margin-bottom:18px; background:linear-gradient(135deg,rgba(108,99,255,.35),rgba(0,212,255,.2)); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px; position:relative; overflow:hidden; }
-    .mockup-hero-bg::after { content:''; position:absolute; inset:0; background:linear-gradient(90deg,transparent 0%,rgba(255,255,255,.06) 50%,transparent 100%); animation:shimmer 3s infinite; }
-    .mockup-h { height:10px; border-radius:6px; background:rgba(255,255,255,.1); margin-bottom:10px; }
-    .mockup-p { height:7px; border-radius:6px; background:rgba(255,255,255,.05); margin-bottom:7px; }
-    .mockup-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:16px; }
-    .mockup-card { height:64px; background:rgba(255,255,255,.04); border-radius:10px; border:1px solid var(--border); }
+    .mockup-url { flex:1; background:rgba(6,6,16,.7); border-radius:8px; padding:5px 14px; font-size:.7rem; color:var(--text3); margin-left:10px; border:1px solid var(--border); }
+    .mockup-body { padding:0; }
+    /* Mockup Nav */
+    .mockup-nav { display:flex; align-items:center; justify-content:space-between; padding:10px 16px; border-bottom:1px solid rgba(108,99,255,.1); background:rgba(10,10,20,.6); }
+    .mockup-nav-logo { display:flex; align-items:center; gap:6px; }
+    .mockup-nav-icon { width:20px; height:20px; background:linear-gradient(135deg,var(--purple),var(--cyan)); border-radius:5px; display:flex; align-items:center; justify-content:center; font-size:.6rem; }
+    .mockup-nav-text { font-size:.65rem; font-weight:700; color:var(--text); }
+    .mockup-nav-links { display:flex; gap:10px; }
+    .mockup-nav-link { width:28px; height:5px; border-radius:3px; background:rgba(255,255,255,.08); }
+    .mockup-nav-btn { background:linear-gradient(135deg,var(--purple),#a78bfa); border-radius:5px; padding:4px 10px; font-size:.58rem; font-weight:700; color:#fff; }
+    /* Mockup Hero */
+    .mockup-hero { padding:18px 16px 14px; background:linear-gradient(160deg,rgba(108,99,255,.12) 0%,rgba(0,212,255,.05) 100%); position:relative; overflow:hidden; }
+    .mockup-hero::before { content:''; position:absolute; top:-30px; right:-30px; width:100px; height:100px; background:radial-gradient(circle,rgba(108,99,255,.25),transparent 70%); }
+    .mockup-hero-tag { display:inline-flex; align-items:center; gap:5px; background:rgba(108,99,255,.15); border:1px solid rgba(108,99,255,.3); border-radius:20px; padding:3px 10px; font-size:.58rem; color:var(--purple2); font-weight:600; margin-bottom:8px; }
+    .mockup-hero-tag::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--purple2); }
+    .mockup-hero-h { font-size:.85rem; font-weight:800; color:var(--text); line-height:1.3; margin-bottom:6px; }
+    .mockup-hero-h span { color:var(--cyan); }
+    .mockup-hero-p { font-size:.6rem; color:var(--text2); line-height:1.5; margin-bottom:12px; max-width:200px; }
+    .mockup-hero-btns { display:flex; gap:6px; margin-bottom:12px; }
+    .mockup-btn-p { background:linear-gradient(135deg,var(--purple),#a78bfa); border-radius:6px; padding:5px 12px; font-size:.6rem; font-weight:700; color:#fff; }
+    .mockup-btn-o { border:1px solid rgba(108,99,255,.4); border-radius:6px; padding:5px 12px; font-size:.6rem; font-weight:600; color:var(--text2); }
+    /* Mockup Stats */
+    .mockup-stats { display:flex; gap:10px; padding:10px 16px; border-top:1px solid rgba(108,99,255,.08); border-bottom:1px solid rgba(108,99,255,.08); background:rgba(0,0,0,.2); }
+    .mockup-stat { text-align:center; }
+    .mockup-stat-n { font-size:.75rem; font-weight:800; color:var(--purple2); }
+    .mockup-stat-l { font-size:.52rem; color:var(--text3); }
+    /* Mockup Services */
+    .mockup-services { padding:12px 16px; }
+    .mockup-sec-title { font-size:.65rem; font-weight:700; color:var(--text); margin-bottom:8px; }
+    .mockup-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; }
+    .mockup-card { background:rgba(255,255,255,.04); border-radius:8px; border:1px solid rgba(108,99,255,.1); padding:8px 6px; text-align:center; }
+    .mockup-card-icon { font-size:.9rem; margin-bottom:3px; }
+    .mockup-card-t { font-size:.52rem; font-weight:600; color:var(--text2); line-height:1.3; }
+    /* Mockup CTA */
+    .mockup-cta { margin:0 16px 14px; background:linear-gradient(135deg,rgba(108,99,255,.2),rgba(0,212,255,.1)); border:1px solid rgba(108,99,255,.25); border-radius:10px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; }
+    .mockup-cta-text { font-size:.6rem; font-weight:700; color:var(--text); }
+    .mockup-cta-sub { font-size:.52rem; color:var(--text2); }
+    .mockup-cta-btn { background:linear-gradient(135deg,var(--purple),#a78bfa); border-radius:6px; padding:5px 10px; font-size:.58rem; font-weight:700; color:#fff; white-space:nowrap; }
 
     .float-badge { position:absolute; border-radius:14px; padding:10px 18px; font-size:.78rem; font-weight:700; display:flex; align-items:center; gap:8px; backdrop-filter:blur(20px); border:1px solid; animation:float 4s ease-in-out infinite; }
     .fb-1 { top:20px; right:-30px; color:var(--green); background:rgba(0,255,136,.1); border-color:rgba(0,255,136,.2); box-shadow:0 8px 32px rgba(0,255,136,.15); }
@@ -523,16 +553,49 @@
               <div class="mockup-url">🔒 www.siteniz.com</div>
             </div>
             <div class="mockup-body">
-              <div class="mockup-hero-bg">
-                <div style="color:#fff;font-weight:800;font-size:1.05rem;position:relative;z-index:1;">Hoş Geldiniz 👋</div>
-                <div style="color:rgba(255,255,255,.6);font-size:.75rem;position:relative;z-index:1;">İşletme Adınız</div>
+              <!-- Nav -->
+              <div class="mockup-nav">
+                <div class="mockup-nav-logo">
+                  <div class="mockup-nav-icon">⚡</div>
+                  <div class="mockup-nav-text">Erzincan <span style="color:#8b83ff;">Web</span></div>
+                </div>
+                <div class="mockup-nav-links">
+                  <div class="mockup-nav-link"></div>
+                  <div class="mockup-nav-link"></div>
+                  <div class="mockup-nav-link"></div>
+                </div>
+                <div class="mockup-nav-btn">Teklif Al</div>
               </div>
-              <div class="mockup-h" style="width:55%"></div>
-              <div class="mockup-p" style="width:92%"></div>
-              <div class="mockup-p" style="width:76%"></div>
-              <div class="mockup-p" style="width:48%"></div>
-              <div class="mockup-cards">
-                <div class="mockup-card"></div><div class="mockup-card"></div><div class="mockup-card"></div>
+              <!-- Hero -->
+              <div class="mockup-hero">
+                <div class="mockup-hero-tag">Erzincan'ın #1 Ajansı</div>
+                <div class="mockup-hero-h">Google'da <span>Zirveye</span><br/>Taşıyan Siteler</div>
+                <div class="mockup-hero-p">Web tasarım, SEO ve dijital pazarlama hizmetleri.</div>
+                <div class="mockup-hero-btns">
+                  <div class="mockup-btn-p">🚀 Teklif Al</div>
+                  <div class="mockup-btn-o">Portföy</div>
+                </div>
+              </div>
+              <!-- Stats -->
+              <div class="mockup-stats">
+                <div class="mockup-stat"><div class="mockup-stat-n">150+</div><div class="mockup-stat-l">Proje</div></div>
+                <div class="mockup-stat"><div class="mockup-stat-n">%98</div><div class="mockup-stat-l">Memnuniyet</div></div>
+                <div class="mockup-stat"><div class="mockup-stat-n">5+</div><div class="mockup-stat-l">Yıl</div></div>
+                <div class="mockup-stat"><div class="mockup-stat-n">#1</div><div class="mockup-stat-l">Google</div></div>
+              </div>
+              <!-- Services -->
+              <div class="mockup-services">
+                <div class="mockup-sec-title">Hizmetlerimiz</div>
+                <div class="mockup-cards">
+                  <div class="mockup-card"><div class="mockup-card-icon">🌐</div><div class="mockup-card-t">Web Tasarım</div></div>
+                  <div class="mockup-card"><div class="mockup-card-icon">📈</div><div class="mockup-card-t">SEO</div></div>
+                  <div class="mockup-card"><div class="mockup-card-icon">🛒</div><div class="mockup-card-t">E-Ticaret</div></div>
+                </div>
+              </div>
+              <!-- CTA -->
+              <div class="mockup-cta">
+                <div><div class="mockup-cta-text">Ücretsiz Analiz</div><div class="mockup-cta-sub">24 saat içinde dönüş</div></div>
+                <div class="mockup-cta-btn">Başla →</div>
               </div>
             </div>
           </div>
