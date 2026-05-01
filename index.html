@@ -7,119 +7,140 @@
   <meta name="description" content="Erzincan web tasarım, SEO ve dijital pazarlama hakkında uzman rehberleri. Erzincan'daki işletmenizi Google'da üst sıralara taşıyacak ipuçları ve stratejiler." />
   <meta name="keywords" content="Erzincan web tasarım blog, Erzincan SEO rehberi, web tasarım ipuçları, Erzincan dijital pazarlama, yerel SEO Erzincan" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.erzincanwebtasarim.com/blog.html" />
+  <link rel="canonical" href="https://erzincanwebtasarim.tr/blog.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Blog | Erzincan Web Tasarım" />
   <meta property="og:description" content="Erzincan işletmeleri için web tasarım, SEO ve dijital pazarlama rehberleri." />
-  <meta property="og:url" content="https://www.erzincanwebtasarim.com/blog.html" />
+  <meta property="og:url" content="https://erzincanwebtasarim.tr/blog.html" />
+  <meta property="og:image" content="https://erzincanwebtasarim.tr/og-image.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Erzincan Web Tasarım Blog",
-    "url": "https://www.erzincanwebtasarim.com/blog.html",
+    "url": "https://erzincanwebtasarim.tr/blog.html",
     "description": "Erzincan işletmeleri için web tasarım, SEO ve dijital pazarlama içerikleri.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Erzincan Web Tasarım",
-      "url": "https://www.erzincanwebtasarim.com"
-    }
+    "publisher": { "@type": "Organization", "name": "Erzincan Web Tasarım", "url": "https://erzincanwebtasarim.tr" }
   }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236C63FF'/><text y='.9em' font-size='80' x='10'>⚡</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%236C63FF'/><stop offset='100%25' stop-color='%2300d4ff'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text y='.9em' font-size='72' x='12'>⚡</text></svg>" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg: #0a0a0f; --bg2: #111118; --bg3: #18181f; --surface: #1e1e28;
-      --border: #2a2a38; --purple: #6c63ff; --purple2: #8b83ff;
-      --cyan: #00d4ff; --green: #00ff88;
-      --text: #e8e8f0; --text2: #9898aa; --text3: #55556a;
-      --radius: 12px; --radius-lg: 20px;
+      --bg: #060610; --bg2: #0d0d1a; --bg3: #13131f;
+      --surface: #1a1a2e; --border: #2a2a45; --border2: rgba(108,99,255,.25);
+      --purple: #6c63ff; --purple2: #9d96ff; --purple3: #c4bfff;
+      --cyan: #00d4ff; --green: #00ff88; --pink: #ff6eb4;
+      --text: #eeeef8; --text2: #9898b8; --text3: #55556a;
+      --radius: 14px; --radius-lg: 24px;
+      --glass: rgba(255,255,255,.04); --glass2: rgba(255,255,255,.07);
     }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
     a { color: inherit; text-decoration: none; }
-    ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: var(--bg); } ::-webkit-scrollbar-thumb { background: var(--purple); border-radius: 3px; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius); font-size: .9rem; font-weight: 600; transition: all .25s; cursor: pointer; border: none; }
-    .btn-primary { background: linear-gradient(135deg, var(--purple), #a78bfa); color: #fff; box-shadow: 0 4px 20px rgba(108,99,255,.4); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(108,99,255,.6); }
+    ul { list-style: none; }
+    button { cursor: pointer; border: none; outline: none; background: none; font-family: inherit; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(var(--purple), var(--cyan)); border-radius: 3px; }
+
+    #particle-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .4; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 1; }
+
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: var(--radius); font-size: .9rem; font-weight: 700; transition: all .25s; }
+    .btn-primary { background: linear-gradient(135deg, var(--purple), #a78bfa); color: #fff; box-shadow: 0 4px 24px rgba(108,99,255,.5); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(108,99,255,.7); }
+
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(1.5)} }
+    @keyframes glow-pulse { 0%,100%{opacity:.3} 50%{opacity:.7} }
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal.visible { opacity:1; transform:translateY(0); }
 
     /* NAV */
-    #navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 20px 0; background: rgba(10,10,15,.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
-    .nav-logo .logo-icon { width: 38px; height: 38px; background: linear-gradient(135deg, var(--purple), var(--cyan)); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
-    .nav-logo span { color: var(--purple2); }
-    .nav-links { display: flex; align-items: center; gap: 4px; }
-    .nav-links a { padding: 8px 14px; border-radius: 8px; font-size: .88rem; color: var(--text2); font-weight: 500; transition: all .2s; }
-    .nav-links a:hover, .nav-links a.active { color: var(--purple2); background: rgba(108,99,255,.08); }
-    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
-    .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; }
-    #mobile-menu { display: none; position: fixed; inset: 0; z-index: 999; background: rgba(10,10,15,.97); flex-direction: column; align-items: center; justify-content: center; gap: 24px; }
-    #mobile-menu.open { display: flex; }
-    #mobile-menu a { font-size: 1.3rem; font-weight: 600; color: var(--text2); }
-    #mobile-menu a:hover { color: var(--purple2); }
-    .mobile-close { position: absolute; top: 24px; right: 24px; background: none; border: none; font-size: 1.8rem; color: var(--text2); cursor: pointer; }
-    @media(max-width:768px){ .nav-links,.nav-cta-wrap{display:none;} .hamburger{display:flex;} }
+    #navbar { position:fixed; top:0; left:0; right:0; z-index:1000; padding:20px 0; transition:all .3s; }
+    #navbar.scrolled { background:rgba(6,6,16,.88); backdrop-filter:blur(24px); border-bottom:1px solid var(--border); padding:14px 0; }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; }
+    .nav-logo { font-family:'Space Grotesk',sans-serif; font-size:1.35rem; font-weight:800; display:flex; align-items:center; gap:10px; }
+    .logo-icon { width:40px; height:40px; background:linear-gradient(135deg,var(--purple),var(--cyan)); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.1rem; box-shadow:0 4px 16px rgba(108,99,255,.4); }
+    .nav-logo span { background:linear-gradient(135deg,var(--purple2),var(--cyan)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .nav-links { display:flex; align-items:center; gap:4px; }
+    .nav-links a { padding:8px 16px; border-radius:10px; font-size:.88rem; color:var(--text2); font-weight:500; transition:all .2s; }
+    .nav-links a:hover, .nav-links a.active { color:var(--text); background:var(--glass2); }
+    .nav-links a.active { color:var(--purple3); }
+    .nav-cta-wrap { display:flex; gap:10px; }
+    .hamburger { display:none; flex-direction:column; gap:5px; padding:6px; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--text); border-radius:2px; }
+    #mobile-menu { display:none; position:fixed; inset:0; z-index:999; background:rgba(6,6,16,.97); flex-direction:column; align-items:center; justify-content:center; gap:28px; }
+    #mobile-menu.open { display:flex; }
+    #mobile-menu a { font-size:1.4rem; font-weight:700; color:var(--text2); transition:color .2s; }
+    #mobile-menu a:hover { color:var(--purple2); }
+    .mobile-close { position:absolute; top:24px; right:24px; font-size:1.8rem; color:var(--text2); }
 
     /* HERO */
-    .blog-hero { padding: 140px 0 60px; background: var(--bg2); border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }
-    .blog-hero::before { content:''; position:absolute; top:-100px; left:-150px; width:500px; height:500px; background:radial-gradient(circle,rgba(108,99,255,.15),transparent 70%); pointer-events:none; }
-    .blog-hero::after { content:''; position:absolute; bottom:-80px; right:-100px; width:350px; height:350px; background:radial-gradient(circle,rgba(0,212,255,.1),transparent 70%); pointer-events:none; }
-    .section-tag { display:inline-flex; align-items:center; gap:8px; background:rgba(108,99,255,.12); border:1px solid rgba(108,99,255,.3); color:var(--purple2); font-size:.75rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; padding:6px 16px; border-radius:100px; margin-bottom:16px; }
-    .section-tag::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--purple2); }
-    .blog-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(2rem,4vw,3rem); font-weight:700; margin-bottom:16px; }
-    .blog-hero h1 span { color:var(--purple2); }
-    .blog-hero p { color:var(--text2); font-size:1.05rem; max-width:560px; }
+    .blog-hero { padding:140px 0 64px; position:relative; overflow:hidden; border-bottom:1px solid var(--border); }
+    .blog-hero-orb { position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none; animation:glow-pulse 4s ease-in-out infinite; }
+    .blog-hero-orb-1 { width:600px; height:600px; background:radial-gradient(circle,rgba(108,99,255,.15) 0%,transparent 70%); top:-200px; left:-200px; }
+    .blog-hero-orb-2 { width:400px; height:400px; background:radial-gradient(circle,rgba(0,212,255,.1) 0%,transparent 70%); bottom:-100px; right:-100px; animation-delay:-2s; }
+    .section-tag { display:inline-flex; align-items:center; gap:8px; background:rgba(108,99,255,.1); border:1px solid rgba(108,99,255,.3); color:var(--purple3); font-size:.72rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; padding:6px 18px; border-radius:100px; margin-bottom:22px; }
+    .section-tag::before { content:''; width:6px; height:6px; border-radius:50%; background:var(--purple2); animation:pulse 2s infinite; }
+    .blog-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(2rem,4vw,3.2rem); font-weight:800; margin-bottom:16px; }
+    .blog-hero h1 span { background:linear-gradient(135deg,var(--purple2),var(--cyan)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .blog-hero p { color:var(--text2); font-size:1.05rem; max-width:560px; line-height:1.7; }
 
     /* BLOG GRID */
-    .blog-section { padding: 80px 0; }
-    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px,1fr)); gap: 28px; margin-top: 48px; }
-    .blog-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: all .3s; display: flex; flex-direction: column; }
-    .blog-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(108,99,255,.2); border-color: rgba(108,99,255,.4); }
-    .blog-thumb { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 4rem; position: relative; }
-    .blog-category-badge { position: absolute; top: 14px; left: 14px; background: rgba(108,99,255,.9); color: #fff; font-size: .72rem; font-weight: 700; padding: 4px 12px; border-radius: 100px; letter-spacing: .04em; }
-    .read-time { position: absolute; top: 14px; right: 14px; background: rgba(0,0,0,.6); color: var(--text2); font-size: .72rem; padding: 4px 10px; border-radius: 100px; }
-    .blog-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
-    .blog-date { font-size: .78rem; color: var(--text3); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
-    .blog-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; line-height: 1.4; transition: color .2s; }
-    .blog-card:hover .blog-title { color: var(--purple2); }
-    .blog-excerpt { font-size: .88rem; color: var(--text2); line-height: 1.7; flex: 1; margin-bottom: 20px; }
-    .blog-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; border-top: 1px solid var(--border); }
-    .blog-tags { display: flex; gap: 6px; flex-wrap: wrap; }
-    .blog-tag { background: rgba(108,99,255,.1); color: var(--purple2); font-size: .7rem; font-weight: 600; padding: 3px 10px; border-radius: 100px; }
-    .read-more { font-size: .82rem; color: var(--purple2); font-weight: 600; display: flex; align-items: center; gap: 4px; white-space: nowrap; }
-    .read-more:hover { text-decoration: underline; }
+    .blog-section { padding:80px 0; }
+    .blog-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(350px,1fr)); gap:28px; margin-top:52px; }
+    .blog-card { background:var(--glass); border:1px solid var(--border2); border-radius:var(--radius-lg); overflow:hidden; transition:all .35s; display:flex; flex-direction:column; backdrop-filter:blur(14px); }
+    .blog-card:hover { transform:translateY(-8px) scale(1.01); box-shadow:0 24px 60px rgba(108,99,255,.2); border-color:rgba(108,99,255,.4); }
+    .blog-thumb { height:210px; display:flex; align-items:center; justify-content:center; font-size:4rem; position:relative; overflow:hidden; }
+    .blog-thumb::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(26,26,46,.7) 0%,transparent 60%); }
+    .blog-category-badge { position:absolute; top:14px; left:14px; background:rgba(108,99,255,.85); backdrop-filter:blur(8px); color:#fff; font-size:.7rem; font-weight:700; padding:4px 14px; border-radius:100px; z-index:1; }
+    .read-time { position:absolute; top:14px; right:14px; background:rgba(0,0,0,.5); backdrop-filter:blur(8px); color:var(--text2); font-size:.7rem; padding:4px 10px; border-radius:100px; z-index:1; }
+    .blog-body { padding:26px; flex:1; display:flex; flex-direction:column; }
+    .blog-date { font-size:.76rem; color:var(--text3); margin-bottom:10px; display:flex; align-items:center; gap:6px; }
+    .blog-title { font-family:'Space Grotesk',sans-serif; font-size:1.08rem; font-weight:700; margin-bottom:10px; line-height:1.45; transition:color .2s; }
+    .blog-card:hover .blog-title { color:var(--purple2); }
+    .blog-excerpt { font-size:.86rem; color:var(--text2); line-height:1.72; flex:1; margin-bottom:20px; }
+    .blog-footer { display:flex; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px solid var(--border); }
+    .blog-tags { display:flex; gap:6px; flex-wrap:wrap; }
+    .blog-tag { background:rgba(108,99,255,.1); color:var(--purple2); font-size:.7rem; font-weight:600; padding:3px 10px; border-radius:100px; border:1px solid rgba(108,99,255,.15); }
+    .read-more { font-size:.82rem; color:var(--purple2); font-weight:700; display:flex; align-items:center; gap:4px; white-space:nowrap; transition:gap .2s; }
+    .read-more:hover { gap:8px; }
 
     /* FOOTER */
-    footer { background: var(--bg); border-top: 1px solid var(--border); padding: 40px 0; }
-    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-    .footer-links-row { display: flex; gap: 20px; flex-wrap: wrap; }
-    .footer-links-row a { font-size: .85rem; color: var(--text2); transition: color .2s; }
-    .footer-links-row a:hover { color: var(--purple2); }
-    .footer-copy { font-size: .82rem; color: var(--text3); }
+    footer { background:var(--bg); border-top:1px solid var(--border); padding:40px 0; }
+    .footer-inner { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+    .footer-links-row { display:flex; gap:20px; flex-wrap:wrap; }
+    .footer-links-row a { font-size:.85rem; color:var(--text2); transition:color .2s; }
+    .footer-links-row a:hover { color:var(--purple2); }
+    .footer-copy { font-size:.82rem; color:var(--text3); }
 
-    /* WhatsApp */
-    #whatsapp-btn { position:fixed; bottom:88px; right:28px; width:56px; height:56px; border-radius:16px; background:#25D366; display:flex; align-items:center; justify-content:center; font-size:1.6rem; z-index:999; box-shadow:0 4px 20px rgba(37,211,102,.5); transition:all .3s; }
-    #whatsapp-btn:hover { transform:translateY(-4px); box-shadow:0 8px 32px rgba(37,211,102,.7); }
-    #scrollTop { position:fixed; bottom:28px; right:28px; width:48px; height:48px; border-radius:12px; background:var(--purple); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.2rem; z-index:999; opacity:0; transform:translateY(20px); transition:all .3s; pointer-events:none; border:none; cursor:pointer; }
+    /* FLOATING */
+    #whatsapp-btn { position:fixed; bottom:90px; right:28px; width:58px; height:58px; border-radius:18px; background:#25D366; display:flex; align-items:center; justify-content:center; z-index:999; box-shadow:0 4px 24px rgba(37,211,102,.55); transition:all .3s; }
+    #whatsapp-btn:hover { transform:translateY(-5px) scale(1.08); box-shadow:0 10px 36px rgba(37,211,102,.7); }
+    #scrollTop { position:fixed; bottom:28px; right:28px; width:50px; height:50px; border-radius:14px; background:linear-gradient(135deg,var(--purple),#a78bfa); color:#fff; display:flex; align-items:center; justify-content:center; font-size:1.2rem; z-index:999; opacity:0; transform:translateY(20px); transition:all .3s; pointer-events:none; border:none; cursor:pointer; }
     #scrollTop.visible { opacity:1; transform:translateY(0); pointer-events:all; }
+    #scrollTop:hover { transform:translateY(-3px); box-shadow:0 8px 24px rgba(108,99,255,.5); }
 
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity .6s ease,transform .6s ease; }
-    .reveal.visible { opacity:1; transform:translateY(0); }
+    @media(max-width:768px){
+      .nav-links,.nav-cta-wrap{display:none;}
+      .hamburger{display:flex;}
+      .blog-grid{grid-template-columns:1fr;}
+    }
   </style>
 </head>
 <body>
 
-<nav id="navbar">
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<nav id="navbar" role="navigation" aria-label="Ana Navigasyon">
   <div class="container">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">
-        <div class="logo-icon">⚡</div>
+      <a href="/" class="nav-logo" aria-label="Erzincan Web Tasarım Ana Sayfa">
+        <div class="logo-icon" aria-hidden="true">⚡</div>
         Erzincan <span>Web</span>
       </a>
       <div class="nav-links">
@@ -148,6 +169,8 @@
 </div>
 
 <header class="blog-hero">
+  <div class="blog-hero-orb blog-hero-orb-1" aria-hidden="true"></div>
+  <div class="blog-hero-orb blog-hero-orb-2" aria-hidden="true"></div>
   <div class="container">
     <div class="section-tag">Blog</div>
     <h1>Erzincan Web Tasarım <span>Rehberleri</span></h1>
@@ -159,243 +182,147 @@
   <div class="container">
     <div class="blog-grid">
 
-      <!-- Makale 1 -->
       <article class="blog-card reveal">
         <a href="/makale-1-erzincan-web-tasarim-rehberi/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(108,99,255,.2),rgba(0,212,255,.1));">
-            🖥️
-            <span class="blog-category-badge">Web Tasarım</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(108,99,255,.25),rgba(0,212,255,.15));">🖥️<span class="blog-category-badge">Web Tasarım</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 15 Ocak 2025</div>
           <h2 class="blog-title"><a href="/makale-1-erzincan-web-tasarim-rehberi/">Erzincan'da Web Sitesi Yaptırmanın Tam Rehberi: Nereden Başlamalısınız?</a></h2>
-          <p class="blog-excerpt">Erzincan'da işletmeniz için profesyonel web sitesi yaptırmak istiyorsanız doğru yerdesiniz. Bu rehberde nelere dikkat etmeniz gerektiğini, hangi soruları sormanız gerektiğini ve en iyi sonucu nasıl alacağınızı adım adım açıklıyoruz.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Erzincan</span><span class="blog-tag">Web Tasarım</span></div>
-            <a href="/makale-1-erzincan-web-tasarim-rehberi/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Erzincan'da işletmeniz için profesyonel web sitesi yaptırmak istiyorsanız doğru yerdesiniz. Bu rehberde nelere dikkat etmeniz, hangi soruları sormanız gerektiğini açıklıyoruz.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Erzincan</span><span class="blog-tag">Web Tasarım</span></div><a href="/makale-1-erzincan-web-tasarim-rehberi/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 2 -->
       <article class="blog-card reveal">
         <a href="/makale-2-erzincan-seo-rehberi/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(0,255,136,.1),rgba(0,212,255,.1));">
-            📈
-            <span class="blog-category-badge">SEO</span>
-            <span class="read-time">⏱ 6 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(0,255,136,.15),rgba(0,212,255,.1));">📈<span class="blog-category-badge">SEO</span><span class="read-time">⏱ 6 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 22 Ocak 2025</div>
           <h2 class="blog-title"><a href="/makale-2-erzincan-seo-rehberi/">Erzincan'da Yerel SEO: Google'da İlk Sıraya Çıkmanın 7 Yolu</a></h2>
-          <p class="blog-excerpt">Erzincan'da "web tasarım", "avukat" veya herhangi bir hizmeti arayan müşterilerin karşısına nasıl çıkarsınız? Yerel SEO'nun sırlarını ve Erzincan'a özel Google optimizasyon tekniklerini paylaşıyoruz.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">SEO</span><span class="blog-tag">Yerel SEO</span></div>
-            <a href="/makale-2-erzincan-seo-rehberi/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Erzincan'da "web tasarım", "avukat" veya herhangi bir hizmeti arayan müşterilerin karşısına nasıl çıkarsınız? Yerel SEO'nun sırlarını paylaşıyoruz.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">SEO</span><span class="blog-tag">Yerel SEO</span></div><a href="/makale-2-erzincan-seo-rehberi/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 3 -->
       <article class="blog-card reveal">
         <a href="/makale-3-erzincan-e-ticaret/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.1),rgba(236,72,153,.1));">
-            🛒
-            <span class="blog-category-badge">E-Ticaret</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(255,110,180,.1));">🛒<span class="blog-category-badge">E-Ticaret</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 1 Şubat 2025</div>
           <h2 class="blog-title"><a href="/makale-3-erzincan-e-ticaret/">Erzincan'dan Tüm Türkiye'ye Satış Yapın: E-Ticaret Sitesi Kurulum Rehberi</a></h2>
-          <p class="blog-excerpt">Erzincan'daki küçük ve orta ölçekli işletmeler için e-ticaret sitesi kurmanın avantajları, dikkat edilmesi gerekenler ve başarılı online satışın püf noktaları bu yazıda.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">E-Ticaret</span><span class="blog-tag">Erzincan</span></div>
-            <a href="/makale-3-erzincan-e-ticaret/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Erzincan'daki küçük ve orta ölçekli işletmeler için e-ticaret sitesi kurmanın avantajları ve başarılı online satışın püf noktaları.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">E-Ticaret</span><span class="blog-tag">Erzincan</span></div><a href="/makale-3-erzincan-e-ticaret/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 4 -->
       <article class="blog-card reveal">
         <a href="/makale-4-mobil-uyumlu-site/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(52,211,153,.1),rgba(108,99,255,.15));">
-            📱
-            <span class="blog-category-badge">Mobil Tasarım</span>
-            <span class="read-time">⏱ 4 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(52,211,153,.12),rgba(108,99,255,.15));">📱<span class="blog-category-badge">Mobil Tasarım</span><span class="read-time">⏱ 4 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 10 Şubat 2025</div>
           <h2 class="blog-title"><a href="/makale-4-mobil-uyumlu-site/">Neden Mobil Uyumlu Web Sitesi Şart? Erzincan İşletmeleri İçin Kritik Bilgiler</a></h2>
-          <p class="blog-excerpt">Erzincan'da internet kullanıcılarının %72'si sitelere akıllı telefondan erişiyor. Mobil uyumlu olmayan bir site müşteri kaybettiriyor. İşte bilmeniz gereken her şey.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Mobil</span><span class="blog-tag">Tasarım</span></div>
-            <a href="/makale-4-mobil-uyumlu-site/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Erzincan'da internet kullanıcılarının %72'si sitelere akıllı telefondan erişiyor. Mobil uyumlu olmayan bir site müşteri kaybettiriyor.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Mobil</span><span class="blog-tag">Tasarım</span></div><a href="/makale-4-mobil-uyumlu-site/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 5 -->
       <article class="blog-card reveal">
         <a href="/makale-5-google-my-business/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(0,212,255,.12),rgba(0,255,136,.08));">
-            📍
-            <span class="blog-category-badge">Google My Business</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(0,212,255,.12),rgba(0,255,136,.08));">📍<span class="blog-category-badge">Google My Business</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 18 Şubat 2025</div>
           <h2 class="blog-title"><a href="/makale-5-google-my-business/">Erzincan'da Google My Business Nasıl Kullanılır? Ücretsiz Müşteri Çekmenin Yolu</a></h2>
-          <p class="blog-excerpt">Google Haritalar'da işletmenizi öne çıkarmanın en güçlü aracı olan Google My Business'ı Erzincan'daki işletmeniz için sıfırdan nasıl kurarsınız ve optimize edersiniz?</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Google</span><span class="blog-tag">Yerel SEO</span></div>
-            <a href="/makale-5-google-my-business/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Google Haritalar'da işletmenizi öne çıkarmanın en güçlü aracı olan Google My Business'ı sıfırdan nasıl kurarsınız ve optimize edersiniz?</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Google</span><span class="blog-tag">Yerel SEO</span></div><a href="/makale-5-google-my-business/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 6 -->
       <article class="blog-card reveal">
         <a href="/makale-6-web-sitesi-hiz/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(236,72,153,.1),rgba(251,191,36,.1));">
-            ⚡
-            <span class="blog-category-badge">Performans</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(255,110,180,.1),rgba(251,191,36,.1));">⚡<span class="blog-category-badge">Performans</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 28 Şubat 2025</div>
           <h2 class="blog-title"><a href="/makale-6-web-sitesi-hiz/">Web Sitesi Hızı Neden Bu Kadar Önemli? Yavaş Site = Kaybolan Müşteri</a></h2>
-          <p class="blog-excerpt">Google araştırmalarına göre site 3 saniyeden yavaş yüklenirse ziyaretçilerin %53'ü sayfayı terk ediyor. Erzincan'daki işletmenizin sitesini hızlandırmak için pratik adımlar.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Performans</span><span class="blog-tag">Hız</span></div>
-            <a href="/makale-6-web-sitesi-hiz/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Site 3 saniyeden yavaş yüklenirse ziyaretçilerin %53'ü sayfayı terk ediyor. Erzincan'daki işletmenizin sitesini hızlandırmak için pratik adımlar.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Performans</span><span class="blog-tag">Hız</span></div><a href="/makale-6-web-sitesi-hiz/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 7 -->
       <article class="blog-card reveal">
         <a href="/makale-7-erzincan-sosyal-medya/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(251,191,36,.08));">
-            📱
-            <span class="blog-category-badge">Sosyal Medya</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(255,110,180,.15),rgba(251,191,36,.08));">📱<span class="blog-category-badge">Sosyal Medya</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 10 Mart 2025</div>
           <h2 class="blog-title"><a href="/makale-7-erzincan-sosyal-medya/">Erzincan İşletmeleri İçin Sosyal Medya Yönetimi: Instagram, Facebook ve TikTok Rehberi</a></h2>
-          <p class="blog-excerpt">Erzincan'daki işletmeniz için sosyal medyayı etkili kullanmanın yolları. Instagram, Facebook ve TikTok'ta yerel müşteri kitlesine nasıl ulaşırsınız? Strateji ve içerik ipuçları.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Sosyal Medya</span><span class="blog-tag">Erzincan</span></div>
-            <a href="/makale-7-erzincan-sosyal-medya/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Erzincan'daki işletmeniz için sosyal medyayı etkili kullanmanın yolları. Yerel müşteri kitlesine nasıl ulaşırsınız?</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Sosyal Medya</span><span class="blog-tag">Erzincan</span></div><a href="/makale-7-erzincan-sosyal-medya/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 8 -->
       <article class="blog-card reveal">
         <a href="/makale-8-erzincan-google-ads/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(234,179,8,.08));">
-            🎯
-            <span class="blog-category-badge">Google Ads</span>
-            <span class="read-time">⏱ 6 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(234,179,8,.08));">🎯<span class="blog-category-badge">Google Ads</span><span class="read-time">⏱ 6 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 18 Mart 2025</div>
           <h2 class="blog-title"><a href="/makale-8-erzincan-google-ads/">Erzincan'da Google Ads ile Müşteri Çekin: Yerel Reklam Rehberi</a></h2>
-          <p class="blog-excerpt">Google Ads ile Erzincan'daki potansiyel müşterilerinize tam arama anında ulaşın. Bütçenizi verimli kullanmanın yolları, yerel hedefleme stratejileri ve reklam optimizasyonu.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Google Ads</span><span class="blog-tag">Reklam</span></div>
-            <a href="/makale-8-erzincan-google-ads/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Google Ads ile Erzincan'daki potansiyel müşterilerinize tam arama anında ulaşın. Bütçenizi verimli kullanmanın yolları.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Google Ads</span><span class="blog-tag">Reklam</span></div><a href="/makale-8-erzincan-google-ads/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 9 -->
       <article class="blog-card reveal">
         <a href="/makale-9-erzincan-kurumsal-kimlik/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(108,99,255,.1));">
-            🎨
-            <span class="blog-category-badge">Kurumsal Kimlik</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(139,92,246,.15),rgba(108,99,255,.1));">🎨<span class="blog-category-badge">Kurumsal Kimlik</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 25 Mart 2025</div>
           <h2 class="blog-title"><a href="/makale-9-erzincan-kurumsal-kimlik/">Erzincan'da Kurumsal Kimlik Tasarımı: Logo, Renk ve Marka Kimliğinizi Oluşturun</a></h2>
-          <p class="blog-excerpt">Güçlü bir marka kimliği işletmenizi rakiplerden ayırır. Erzincan'daki işletmeler için logo tasarımı, kurumsal renk paleti ve marka kimliği oluşturmanın temel adımları.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Kurumsal Kimlik</span><span class="blog-tag">Logo</span></div>
-            <a href="/makale-9-erzincan-kurumsal-kimlik/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Güçlü bir marka kimliği işletmenizi rakiplerden ayırır. Logo tasarımı, kurumsal renk paleti ve marka kimliğinin temel adımları.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Kurumsal Kimlik</span><span class="blog-tag">Logo</span></div><a href="/makale-9-erzincan-kurumsal-kimlik/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 10 -->
       <article class="blog-card reveal">
         <a href="/makale-10-erzincan-restoran-web-sitesi/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(239,68,68,.08));">
-            🍽️
-            <span class="blog-category-badge">Restoran & Cafe</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,191,36,.12),rgba(239,68,68,.08));">🍽️<span class="blog-category-badge">Restoran & Cafe</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 2 Nisan 2025</div>
           <h2 class="blog-title"><a href="/makale-10-erzincan-restoran-web-sitesi/">Erzincan Restoran ve Kafeler İçin Web Sitesi: Online Rezervasyon ve Menü Yönetimi</a></h2>
-          <p class="blog-excerpt">Erzincan'daki restoran, cafe ve yemek işletmeleri için özel web sitesi rehberi. Online rezervasyon, dijital menü, Google Haritalar entegrasyonu ve müşteri yorumları yönetimi.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Restoran</span><span class="blog-tag">Cafe</span></div>
-            <a href="/makale-10-erzincan-restoran-web-sitesi/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Online rezervasyon, dijital menü, Google Haritalar entegrasyonu ve müşteri yorumları yönetimi rehberi.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Restoran</span><span class="blog-tag">Cafe</span></div><a href="/makale-10-erzincan-restoran-web-sitesi/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 11 -->
       <article class="blog-card reveal">
         <a href="/makale-11-erzincan-saglik-web-sitesi/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(0,255,136,.12),rgba(0,212,255,.08));">
-            🏥
-            <span class="blog-category-badge">Sağlık</span>
-            <span class="read-time">⏱ 5 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(0,255,136,.12),rgba(0,212,255,.08));">🏥<span class="blog-category-badge">Sağlık</span><span class="read-time">⏱ 5 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 10 Nisan 2025</div>
           <h2 class="blog-title"><a href="/makale-11-erzincan-saglik-web-sitesi/">Erzincan'da Sağlık ve Klinik Web Sitesi: Hasta Güveni Kazanan Tasarım Rehberi</a></h2>
-          <p class="blog-excerpt">Erzincan'daki doktor muayenehaneleri, klinikler ve sağlık kuruluşları için profesyonel web sitesi nasıl olmalı? Online randevu, hasta güveni ve KVKK uyumlu tasarım ipuçları.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">Sağlık</span><span class="blog-tag">Klinik</span></div>
-            <a href="/makale-11-erzincan-saglik-web-sitesi/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Online randevu, hasta güveni ve KVKK uyumlu sağlık sitesi tasarım ipuçları.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">Sağlık</span><span class="blog-tag">Klinik</span></div><a href="/makale-11-erzincan-saglik-web-sitesi/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
-      <!-- Makale 12 -->
       <article class="blog-card reveal">
         <a href="/makale-12-erzincan-insaat-emlak-web/">
-          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,146,60,.15),rgba(234,88,12,.08));">
-            🏗️
-            <span class="blog-category-badge">İnşaat & Emlak</span>
-            <span class="read-time">⏱ 6 dk okuma</span>
-          </div>
+          <div class="blog-thumb" style="background:linear-gradient(135deg,rgba(251,146,60,.15),rgba(234,88,12,.08));">🏗️<span class="blog-category-badge">İnşaat & Emlak</span><span class="read-time">⏱ 6 dk</span></div>
         </a>
         <div class="blog-body">
           <div class="blog-date">📅 18 Nisan 2025</div>
           <h2 class="blog-title"><a href="/makale-12-erzincan-insaat-emlak-web/">Erzincan İnşaat ve Emlak Firmaları İçin Web Sitesi: Proje Vitrininden Satışa</a></h2>
-          <p class="blog-excerpt">Erzincan'daki inşaat ve emlak firmalarının web sitesi nasıl olmalı? Proje galerisi, sanal tur, konum haritaları ve online başvuru formuyla satışlarınızı artırın.</p>
-          <div class="blog-footer">
-            <div class="blog-tags"><span class="blog-tag">İnşaat</span><span class="blog-tag">Emlak</span></div>
-            <a href="/makale-12-erzincan-insaat-emlak-web/" class="read-more">Devamını Oku →</a>
-          </div>
+          <p class="blog-excerpt">Proje galerisi, sanal tur, konum haritaları ve online başvuru formuyla satışlarınızı artırın.</p>
+          <div class="blog-footer"><div class="blog-tags"><span class="blog-tag">İnşaat</span><span class="blog-tag">Emlak</span></div><a href="/makale-12-erzincan-insaat-emlak-web/" class="read-more">Devamını Oku →</a></div>
         </div>
       </article>
 
@@ -406,10 +333,7 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <a href="/" class="nav-logo">
-        <div class="logo-icon">⚡</div>
-        Erzincan <span>Web</span>
-      </a>
+      <a href="/" class="nav-logo"><div class="logo-icon">⚡</div>Erzincan <span>Web</span></a>
       <div class="footer-links-row">
         <a href="/">Ana Sayfa</a>
         <a href="/#hizmetler">Hizmetler</a>
@@ -428,12 +352,26 @@
 <button id="scrollTop" aria-label="Başa dön" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-window.addEventListener('scroll', () => {
-  document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
-}, {passive:true});
-document.querySelectorAll('.reveal').forEach(el => {
-  new IntersectionObserver(([e]) => { if(e.isIntersecting){el.classList.add('visible');} }, {threshold:.1}).observe(el);
-});
+// Particle Canvas
+(function(){
+  const canvas=document.getElementById('particle-canvas');
+  const ctx=canvas.getContext('2d');
+  let W,H,particles=[];
+  function resize(){W=canvas.width=window.innerWidth;H=canvas.height=window.innerHeight;}
+  function Particle(){this.x=Math.random()*W;this.y=Math.random()*H;this.size=Math.random()*1.5+.3;this.speedX=(Math.random()-.5)*.3;this.speedY=(Math.random()-.5)*.3;this.opacity=Math.random()*.5+.1;this.color=Math.random()>.5?`rgba(108,99,255,${this.opacity})`:`rgba(0,212,255,${this.opacity})`;}
+  function init(){resize();particles=[];const c=Math.floor((W*H)/16000);for(let i=0;i<c;i++)particles.push(new Particle());}
+  function draw(){ctx.clearRect(0,0,W,H);particles.forEach(p=>{p.x+=p.speedX;p.y+=p.speedY;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;ctx.beginPath();ctx.arc(p.x,p.y,p.size,0,Math.PI*2);ctx.fillStyle=p.color;ctx.fill();});requestAnimationFrame(draw);}
+  window.addEventListener('resize',init);init();draw();
+})();
+
+const navbar=document.getElementById('navbar');
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>40);
+  document.getElementById('scrollTop').classList.toggle('visible',window.scrollY>400);
+},{passive:true});
+
+const ro=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target);}});},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 </script>
 </body>
 </html>
