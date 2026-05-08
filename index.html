@@ -909,7 +909,7 @@
 
 <script>
 // Particle Canvas
-if(window.innerWidth > 768){(function(){
+(function(){
   const canvas = document.getElementById('particle-canvas');
   const ctx = canvas.getContext('2d');
   let W, H, particles = [];
@@ -937,8 +937,7 @@ if(window.innerWidth > 768){(function(){
     requestAnimationFrame(draw);
   }
   window.addEventListener('resize',init); init(); draw();
-}})();
-}
+})();
 
 // Navbar
 const navbar=document.getElementById('navbar');
