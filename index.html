@@ -973,6 +973,7 @@ document.querySelector('.contact-form').addEventListener('submit',(e)=>{
 });
 
 // 3D tilt
+if(window.innerWidth > 768){
 const scene=document.getElementById('hero3d');
 const visual=document.querySelector('.hero-visual');
 if(scene&&visual){
