@@ -1,4 +1,21 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/blog.html", "destination": "/blog", "permanent": true },
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/erzincan-web-tasarim.html", "destination": "/", "permanent": true },
+    { "source": "/makale-1-erzincan-web-tasarim-rehberi.html", "destination": "/makale-1-erzincan-web-tasarim-rehberi", "permanent": true },
+    { "source": "/makale-2-erzincan-seo-rehberi.html", "destination": "/makale-2-erzincan-seo-rehberi", "permanent": true },
+    { "source": "/makale-3-erzincan-e-ticaret.html", "destination": "/makale-3-erzincan-e-ticaret", "permanent": true },
+    { "source": "/makale-4-mobil-uyumlu-site.html", "destination": "/makale-4-mobil-uyumlu-site", "permanent": true },
+    { "source": "/makale-5-google-my-business.html", "destination": "/makale-5-google-my-business", "permanent": true },
+    { "source": "/makale-6-web-sitesi-hiz.html", "destination": "/makale-6-web-sitesi-hiz", "permanent": true },
+    { "source": "/makale-7-erzincan-sosyal-medya.html", "destination": "/makale-7-erzincan-sosyal-medya", "permanent": true },
+    { "source": "/makale-8-erzincan-google-ads.html", "destination": "/makale-8-erzincan-google-ads", "permanent": true },
+    { "source": "/makale-9-erzincan-kurumsal-kimlik.html", "destination": "/makale-9-erzincan-kurumsal-kimlik", "permanent": true },
+    { "source": "/makale-10-erzincan-restoran-web-sitesi.html", "destination": "/makale-10-erzincan-restoran-web-sitesi", "permanent": true },
+    { "source": "/makale-11-erzincan-saglik-web-sitesi.html", "destination": "/makale-11-erzincan-saglik-web-sitesi", "permanent": true },
+    { "source": "/makale-12-erzincan-insaat-emlak-web.html", "destination": "/makale-12-erzincan-insaat-emlak-web", "permanent": true }
+  ]
 }
